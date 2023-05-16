@@ -2,18 +2,6 @@ require('dotenv').config();
 const express = require("express")
 const app = express();
 const port = process.env.PORT || 3000;
-const sticky = require('sticky-session');
-
-// Enable sticky sessions
-if (!sticky.listen(server)) {
-  // Master process
-  server.once('listening', () => {
-    console.log('Master server started on port', server.address().port);
-  });
-} else {
-  // Worker process
-  console.log('Worker server started on port', server.address().port);
-}
 
 
 //npm i cookie-parser
