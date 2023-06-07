@@ -20,13 +20,13 @@ npm run start:dev
 
 ## End points
 
-  GET /api/v1/user
+  GET http://52.66.241.213/api/v1/user
 
   Description: Retrieve all users.
   Response: Status Code: 200 OK
   Body: Array of user objects.
 
-  POST /api/v1/user
+  POST http://52.66.241.213/api/v1/user
 
   Description: Create a new user.
   Request Body:
@@ -37,7 +37,7 @@ npm run start:dev
   Status Code: 201 Created
   Body: Created user object.
   
-  GET /api/v1/user/:userId
+  GET http://52.66.241.213/api/v1/user/:userId
 
   Description: Retrieve a user by ID.
   Parameters:
@@ -46,7 +46,7 @@ npm run start:dev
   Status Code: 200 OK
   Body: User object.
   
-  PUT /api/v1/user/:userId
+  PUT http://52.66.241.213/api/v1/user/:userId
 
   Description: Update a user by ID.
   Parameters:
@@ -59,7 +59,7 @@ npm run start:dev
   Status Code: 200 OK
   Body: Updated user object.
   
-  DELETE /api/v1/user/:userId
+  DELETE http://52.66.241.213/api/v1/user/:userId
 
   Description: Delete a user by ID.
   Parameters:
